@@ -4,13 +4,27 @@
     ViewData["Title"] = "ReservationDetails";
 }
 
-<h1>Resvervation Details</h1>
+<h1>Reservation Details</h1>
 
 <p>
     <a asp-action="Create">Create New</a>
 </p>
 
+<div class="row">
+    <div class="col-md-6">
+        <form method="get" action="@Url.Action("ReservationDetails", "Dashboard")">
+            <div class="form-group">
+                <label for="selectedDate">Select Date:</label>
+                <input type="date" id="selectedDate" name="selectedDate" value="@Model.Date.ToString("yyyy-MM-dd")" class="form-control" />
+            </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+    </div>
+</div>
+
 <h2>Past Seven Days</h2>
+<p>Total Number of Reservations: @Model.TotalPastNoOfRes</p>
+<p>Total Payment: @Model.TotalPastPayment</p>
 <table class="table">
     <thead>
         <tr>
@@ -28,6 +42,47 @@
     </thead>
     <tbody>
         @foreach (var item in Model.PastReservations)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.NoOfRes)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Date)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Payment)
+                </td>
+                <td>
+                    @Html.ActionLink("Edit", "Edit", new { /* id=item.PrimaryKey */ }) |
+                    @Html.ActionLink("Details", "Details", new { /* id=item.PrimaryKey */ }) |
+                    @Html.ActionLink("Delete", "Delete", new { /* id=item.PrimaryKey */ })
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
+
+<h2>Upcoming Seven Days</h2>
+<p>Total Number of Reservations: @Model.TotalUpcomingNoOfRes</p>
+<p>Total Payment: @Model.TotalUpcomingPayment</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.UpcomingReservations.First().NoOfRes)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.UpcomingReservations.First().Date)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.UpcomingReservations.First().Payment)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model.UpcomingReservations)
         {
             <tr>
                 <td>
