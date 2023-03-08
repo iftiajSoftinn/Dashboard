@@ -10,7 +10,7 @@ namespace Dashboard.Controllers
             return View();
         }
 
-        public ActionResult ReservationDetails()
+        public ActionResult ReservationDetails(DateTime? selectedDate)
         {
             List<ReservationModel> reservationDetails = new List<ReservationModel>()
             {
@@ -39,7 +39,7 @@ namespace Dashboard.Controllers
                     Id = 4,
                     Date = new DateTime(2023, 3, 4), // // year, month, day
                     Payment = 90
-                },                
+                },
                 new ReservationModel
                 {
                     Id = 5,
@@ -80,10 +80,40 @@ namespace Dashboard.Controllers
                     Payment = 90
                 }
             };
+
+            if (!selectedDate.HasValue)
+    {
+        selectedDate = DateTime.Today;
+    }
+
+    DateTime startDate = selectedDate.Value.AddDays(-7);
+    DateTime endDate = selectedDate.Value.AddDays(7);
+
+    List<ReservationModel> pastReservations = reservationDetails
+        .Where(r => r.Date >= startDate && r.Date < selectedDate)
+        .ToList();
+
+    List<ReservationModel> upcomingReservations = reservationDetails
+        .Where(r => r.Date >= selectedDate && r.Date <= endDate)
+        .ToList();
+
+    decimal totalPastAmount = pastReservations.Sum(r => r.Payment);
+
+    ReservationDetailsViewModel viewModel = new ReservationDetailsViewModel
+    {
+        SelectedDate = selectedDate.Value,
+        PastReservations = pastReservations,
+        UpcomingReservations = upcomingReservations,
+        TotalPastAmount = totalPastAmount
+    };
+
             ViewBag.List = reservationDetails;
             ViewData["reservationDeatails"] = reservationDetails;
 
             return View(reservationDetails);
         }
+
+
+
     }
 }
