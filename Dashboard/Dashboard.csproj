@@ -7,7 +7,182 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Compile Include="obj\Debug\net6.0\.NETCoreApp,Version=v6.0.AssemblyAttributes.cs" />
+    <Compile Include="obj\Debug\net6.0\Dashboard.AssemblyInfo.cs" />
+    <Compile Include="obj\Debug\net6.0\Dashboard.GlobalUsings.g.cs" />
+    <Compile Include="obj\Debug\net6.0\Dashboard.RazorAssemblyInfo.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="node_modules\.package-lock.json" />
+    <Content Include="node_modules\angular\angular-csp.css" />
+    <Content Include="node_modules\angular\bower.json" />
+    <Content Include="node_modules\angular\package.json" />
+    <Content Include="node_modules\typescript\lib\cs\diagnosticMessages.generated.json" />
+    <Content Include="node_modules\typescript\lib\de\diagnosticMessages.generated.json" />
+    <Content Include="node_modules\typescript\lib\es\diagnosticMessages.generated.json" />
+    <Content Include="node_modules\typescript\lib\fr\diagnosticMessages.generated.json" />
+    <Content Include="node_modules\typescript\lib\it\diagnosticMessages.generated.json" />
+    <Content Include="node_modules\typescript\lib\ja\diagnosticMessages.generated.json" />
+    <Content Include="node_modules\typescript\lib\ko\diagnosticMessages.generated.json" />
+    <Content Include="node_modules\typescript\lib\pl\diagnosticMessages.generated.json" />
+    <Content Include="node_modules\typescript\lib\pt-br\diagnosticMessages.generated.json" />
+    <Content Include="node_modules\typescript\lib\ru\diagnosticMessages.generated.json" />
+    <Content Include="node_modules\typescript\lib\tr\diagnosticMessages.generated.json" />
+    <Content Include="node_modules\typescript\lib\typesMap.json" />
+    <Content Include="node_modules\typescript\lib\zh-cn\diagnosticMessages.generated.json" />
+    <Content Include="node_modules\typescript\lib\zh-tw\diagnosticMessages.generated.json" />
+    <Content Include="node_modules\typescript\LICENSE.txt" />
+    <Content Include="node_modules\typescript\package.json" />
+    <Content Include="node_modules\typescript\ThirdPartyNoticeText.txt" />
+    <Content Include="obj\Dashboard.csproj.nuget.dgspec.json" />
+    <Content Include="obj\Debug\net6.0\Dashboard.csproj.FileListAbsolute.txt" />
+    <Content Include="obj\Debug\net6.0\project.razor.vs.json" />
+    <Content Include="obj\Debug\net6.0\scopedcss\bundle\Dashboard.styles.css" />
+    <Content Include="obj\Debug\net6.0\scopedcss\projectbundle\Dashboard.bundle.scp.css" />
+    <Content Include="obj\Debug\net6.0\scopedcss\Views\Shared\_Layout.cshtml.rz.scp.css" />
+    <Content Include="obj\Debug\net6.0\staticwebassets.build.json" />
+    <Content Include="obj\Debug\net6.0\staticwebassets.development.json" />
+    <Content Include="obj\Debug\net6.0\staticwebassets.pack.json" />
+    <Content Include="obj\project.assets.json" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="node_modules\.bin\tsc" />
+    <None Include="node_modules\.bin\tsc.cmd" />
+    <None Include="node_modules\.bin\tsc.ps1" />
+    <None Include="node_modules\.bin\tsserver" />
+    <None Include="node_modules\.bin\tsserver.cmd" />
+    <None Include="node_modules\.bin\tsserver.ps1" />
+    <None Include="node_modules\angular\angular.js" />
+    <None Include="node_modules\angular\angular.min.js" />
+    <None Include="node_modules\angular\angular.min.js.gzip" />
+    <None Include="node_modules\angular\angular.min.js.map" />
+    <None Include="node_modules\angular\index.js" />
+    <None Include="node_modules\angular\LICENSE.md" />
+    <None Include="node_modules\angular\README.md" />
+    <None Include="node_modules\typescript\bin\tsc" />
+    <None Include="node_modules\typescript\bin\tsserver" />
+    <None Include="node_modules\typescript\lib\cancellationToken.js" />
+    <None Include="node_modules\typescript\lib\dynamicImportCompat.js" />
+    <None Include="node_modules\typescript\lib\README.md" />
+    <None Include="node_modules\typescript\lib\tsc.js" />
+    <None Include="node_modules\typescript\lib\tsserver.js" />
+    <None Include="node_modules\typescript\lib\tsserverlibrary.js" />
+    <None Include="node_modules\typescript\lib\typescript.js" />
+    <None Include="node_modules\typescript\lib\typescriptServices.js" />
+    <None Include="node_modules\typescript\lib\typingsInstaller.js" />
+    <None Include="node_modules\typescript\lib\watchGuard.js" />
+    <None Include="node_modules\typescript\README.md" />
+    <None Include="node_modules\typescript\SECURITY.md" />
+    <None Include="obj\Dashboard.csproj.nuget.g.props" />
+    <None Include="obj\Dashboard.csproj.nuget.g.targets" />
+    <None Include="obj\Debug\net6.0\apphost.exe" />
+    <None Include="obj\Debug\net6.0\Dashboard.AssemblyInfoInputs.cache" />
+    <None Include="obj\Debug\net6.0\Dashboard.assets.cache" />
+    <None Include="obj\Debug\net6.0\Dashboard.csproj.AssemblyReference.cache" />
+    <None Include="obj\Debug\net6.0\Dashboard.csproj.BuildWithSkipAnalyzers" />
+    <None Include="obj\Debug\net6.0\Dashboard.csproj.CopyComplete" />
+    <None Include="obj\Debug\net6.0\Dashboard.csproj.CoreCompileInputs.cache" />
+    <None Include="obj\Debug\net6.0\Dashboard.dll" />
+    <None Include="obj\Debug\net6.0\Dashboard.GeneratedMSBuildEditorConfig.editorconfig" />
+    <None Include="obj\Debug\net6.0\Dashboard.genruntimeconfig.cache" />
+    <None Include="obj\Debug\net6.0\Dashboard.MvcApplicationPartsAssemblyInfo.cache" />
+    <None Include="obj\Debug\net6.0\Dashboard.pdb" />
+    <None Include="obj\Debug\net6.0\Dashboard.RazorAssemblyInfo.cache" />
+    <None Include="obj\Debug\net6.0\refint\Dashboard.dll" />
+    <None Include="obj\Debug\net6.0\ref\Dashboard.dll" />
+    <None Include="obj\Debug\net6.0\staticwebassets\msbuild.build.Dashboard.props" />
+    <None Include="obj\Debug\net6.0\staticwebassets\msbuild.buildMultiTargeting.Dashboard.props" />
+    <None Include="obj\Debug\net6.0\staticwebassets\msbuild.buildTransitive.Dashboard.props" />
+    <None Include="obj\Debug\net6.0\staticwebassets\msbuild.Dashboard.Microsoft.AspNetCore.StaticWebAssets.props" />
+    <None Include="obj\Debug\net6.0\Tsc67a5340.out" />
+    <None Include="obj\Debug\net6.0\_IsIncrementalBuild" />
+    <None Include="obj\project.nuget.cache" />
+  </ItemGroup>
+
+  <ItemGroup>
     <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="6.0.12" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <TypeScriptCompile Include="node_modules\typescript\lib\lib.d.ts" />
+    <TypeScriptCompile Include="node_modules\typescript\lib\lib.dom.d.ts" />
+    <TypeScriptCompile Include="node_modules\typescript\lib\lib.dom.iterable.d.ts" />
+    <TypeScriptCompile Include="node_modules\typescript\lib\lib.es2015.collection.d.ts" />
+    <TypeScriptCompile Include="node_modules\typescript\lib\lib.es2015.core.d.ts" />
+    <TypeScriptCompile Include="node_modules\typescript\lib\lib.es2015.d.ts" />
+    <TypeScriptCompile Include="node_modules\typescript\lib\lib.es2015.generator.d.ts" />
+    <TypeScriptCompile Include="node_modules\typescript\lib\lib.es2015.iterable.d.ts" />
+    <TypeScriptCompile Include="node_modules\typescript\lib\lib.es2015.promise.d.ts" />
+    <TypeScriptCompile Include="node_modules\typescript\lib\lib.es2015.proxy.d.ts" />
+    <TypeScriptCompile Include="node_modules\typescript\lib\lib.es2015.reflect.d.ts" />
+    <TypeScriptCompile Include="node_modules\typescript\lib\lib.es2015.symbol.d.ts" />
+    <TypeScriptCompile Include="node_modules\typescript\lib\lib.es2015.symbol.wellknown.d.ts" />
+    <TypeScriptCompile Include="node_modules\typescript\lib\lib.es2016.array.include.d.ts" />
+    <TypeScriptCompile Include="node_modules\typescript\lib\lib.es2016.d.ts" />
+    <TypeScriptCompile Include="node_modules\typescript\lib\lib.es2016.full.d.ts" />
+    <TypeScriptCompile Include="node_modules\typescript\lib\lib.es2017.d.ts" />
+    <TypeScriptCompile Include="node_modules\typescript\lib\lib.es2017.full.d.ts" />
+    <TypeScriptCompile Include="node_modules\typescript\lib\lib.es2017.intl.d.ts" />
+    <TypeScriptCompile Include="node_modules\typescript\lib\lib.es2017.object.d.ts" />
+    <TypeScriptCompile Include="node_modules\typescript\lib\lib.es2017.sharedmemory.d.ts" />
+    <TypeScriptCompile Include="node_modules\typescript\lib\lib.es2017.string.d.ts" />
+    <TypeScriptCompile Include="node_modules\typescript\lib\lib.es2017.typedarrays.d.ts" />
+    <TypeScriptCompile Include="node_modules\typescript\lib\lib.es2018.asyncgenerator.d.ts" />
+    <TypeScriptCompile Include="node_modules\typescript\lib\lib.es2018.asynciterable.d.ts" />
+    <TypeScriptCompile Include="node_modules\typescript\lib\lib.es2018.d.ts" />
+    <TypeScriptCompile Include="node_modules\typescript\lib\lib.es2018.full.d.ts" />
+    <TypeScriptCompile Include="node_modules\typescript\lib\lib.es2018.intl.d.ts" />
+    <TypeScriptCompile Include="node_modules\typescript\lib\lib.es2018.promise.d.ts" />
+    <TypeScriptCompile Include="node_modules\typescript\lib\lib.es2018.regexp.d.ts" />
+    <TypeScriptCompile Include="node_modules\typescript\lib\lib.es2019.array.d.ts" />
+    <TypeScriptCompile Include="node_modules\typescript\lib\lib.es2019.d.ts" />
+    <TypeScriptCompile Include="node_modules\typescript\lib\lib.es2019.full.d.ts" />
+    <TypeScriptCompile Include="node_modules\typescript\lib\lib.es2019.intl.d.ts" />
+    <TypeScriptCompile Include="node_modules\typescript\lib\lib.es2019.object.d.ts" />
+    <TypeScriptCompile Include="node_modules\typescript\lib\lib.es2019.string.d.ts" />
+    <TypeScriptCompile Include="node_modules\typescript\lib\lib.es2019.symbol.d.ts" />
+    <TypeScriptCompile Include="node_modules\typescript\lib\lib.es2020.bigint.d.ts" />
+    <TypeScriptCompile Include="node_modules\typescript\lib\lib.es2020.d.ts" />
+    <TypeScriptCompile Include="node_modules\typescript\lib\lib.es2020.date.d.ts" />
+    <TypeScriptCompile Include="node_modules\typescript\lib\lib.es2020.full.d.ts" />
+    <TypeScriptCompile Include="node_modules\typescript\lib\lib.es2020.intl.d.ts" />
+    <TypeScriptCompile Include="node_modules\typescript\lib\lib.es2020.number.d.ts" />
+    <TypeScriptCompile Include="node_modules\typescript\lib\lib.es2020.promise.d.ts" />
+    <TypeScriptCompile Include="node_modules\typescript\lib\lib.es2020.sharedmemory.d.ts" />
+    <TypeScriptCompile Include="node_modules\typescript\lib\lib.es2020.string.d.ts" />
+    <TypeScriptCompile Include="node_modules\typescript\lib\lib.es2020.symbol.wellknown.d.ts" />
+    <TypeScriptCompile Include="node_modules\typescript\lib\lib.es2021.d.ts" />
+    <TypeScriptCompile Include="node_modules\typescript\lib\lib.es2021.full.d.ts" />
+    <TypeScriptCompile Include="node_modules\typescript\lib\lib.es2021.intl.d.ts" />
+    <TypeScriptCompile Include="node_modules\typescript\lib\lib.es2021.promise.d.ts" />
+    <TypeScriptCompile Include="node_modules\typescript\lib\lib.es2021.string.d.ts" />
+    <TypeScriptCompile Include="node_modules\typescript\lib\lib.es2021.weakref.d.ts" />
+    <TypeScriptCompile Include="node_modules\typescript\lib\lib.es2022.array.d.ts" />
+    <TypeScriptCompile Include="node_modules\typescript\lib\lib.es2022.d.ts" />
+    <TypeScriptCompile Include="node_modules\typescript\lib\lib.es2022.error.d.ts" />
+    <TypeScriptCompile Include="node_modules\typescript\lib\lib.es2022.full.d.ts" />
+    <TypeScriptCompile Include="node_modules\typescript\lib\lib.es2022.intl.d.ts" />
+    <TypeScriptCompile Include="node_modules\typescript\lib\lib.es2022.object.d.ts" />
+    <TypeScriptCompile Include="node_modules\typescript\lib\lib.es2022.sharedmemory.d.ts" />
+    <TypeScriptCompile Include="node_modules\typescript\lib\lib.es2022.string.d.ts" />
+    <TypeScriptCompile Include="node_modules\typescript\lib\lib.es5.d.ts" />
+    <TypeScriptCompile Include="node_modules\typescript\lib\lib.es6.d.ts" />
+    <TypeScriptCompile Include="node_modules\typescript\lib\lib.esnext.d.ts" />
+    <TypeScriptCompile Include="node_modules\typescript\lib\lib.esnext.full.d.ts" />
+    <TypeScriptCompile Include="node_modules\typescript\lib\lib.esnext.intl.d.ts" />
+    <TypeScriptCompile Include="node_modules\typescript\lib\lib.esnext.promise.d.ts" />
+    <TypeScriptCompile Include="node_modules\typescript\lib\lib.esnext.string.d.ts" />
+    <TypeScriptCompile Include="node_modules\typescript\lib\lib.esnext.weakref.d.ts" />
+    <TypeScriptCompile Include="node_modules\typescript\lib\lib.scripthost.d.ts" />
+    <TypeScriptCompile Include="node_modules\typescript\lib\lib.webworker.d.ts" />
+    <TypeScriptCompile Include="node_modules\typescript\lib\lib.webworker.importscripts.d.ts" />
+    <TypeScriptCompile Include="node_modules\typescript\lib\lib.webworker.iterable.d.ts" />
+    <TypeScriptCompile Include="node_modules\typescript\lib\protocol.d.ts" />
+    <TypeScriptCompile Include="node_modules\typescript\lib\tsserverlibrary.d.ts" />
+    <TypeScriptCompile Include="node_modules\typescript\lib\typescript.d.ts" />
+    <TypeScriptCompile Include="node_modules\typescript\lib\typescriptServices.d.ts" />
   </ItemGroup>
 
 </Project>
