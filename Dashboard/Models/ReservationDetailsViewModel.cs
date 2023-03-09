@@ -1,4 +1,8 @@
-﻿namespace Dashboard.Models
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+
+namespace Dashboard.Models
 {
     public class ReservationDetailsViewModel
 

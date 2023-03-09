@@ -1,4 +1,6 @@
-﻿namespace Dashboard.Models
+﻿using System;
+
+namespace Dashboard.Models
 {
     public class ReservationModel
     {
