@@ -208,6 +208,7 @@ namespace Dashboard.Controllers
             decimal totalPastPayment = pastReservations.Sum(r => r.Payment);
             int totalUpcomingNoOfRes = upcomingReservations.Sum(r => r.NoOfRes);
             decimal totalUpcomingPayment = upcomingReservations.Sum(r => r.Payment);
+            decimal totalRevenuePastSevenDays = totalPastPayment * 0.4m;
 
             ReservationDetailsViewModel model = new ReservationDetailsViewModel(pastReservations, upcomingReservations, date);
 

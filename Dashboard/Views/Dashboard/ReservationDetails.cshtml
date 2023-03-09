@@ -6,9 +6,9 @@
 
 <h1>Reservation Details</h1>
 
-<p>
+@*<p>
     <a asp-action="Create">Create New</a>
-</p>
+</p>*@
 
 <div class="row">
     <div class="col-md-6">
@@ -17,22 +17,25 @@
                 <label for="selectedDate">Select Date:</label>
                 <input type="date" id="selectedDate" name="selectedDate" value="@Model.Date.ToString("yyyy-MM-dd")" class="form-control" />
             </div>
+            <br />
             <button type="submit" class="btn btn-primary">Submit</button>
         </form>
     </div>
 </div>
 
 <h2>Past Seven Days</h2>
-<p>Total Number of Reservations: @Model.TotalPastNoOfRes</p>
-<p>Total Payment: @Model.TotalPastPayment</p>
+<h6>Total number of reservations made for the past 7 days: @Model.TotalPastNoOfRes</h6>
+<h6>Total amount of sales for the past 7 days: @Model.TotalPastPayment</h6>
+<h6>Total revenue for the past 7 days: @Model.TotalRevenuePastSevenDays</h6>
+
 <table class="table">
-    <thead>
+    <thead class="thead-dark">
         <tr>
             <th>
-                @Html.DisplayNameFor(model => model.PastReservations.First().NoOfRes)
+                @Html.DisplayNameFor(model => model.PastReservations.First().Date)
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.PastReservations.First().Date)
+                @Html.DisplayNameFor(model => model.PastReservations.First().NoOfRes)
             </th>
             <th>
                 @Html.DisplayNameFor(model => model.PastReservations.First().Payment)
@@ -45,35 +48,35 @@
         {
             <tr>
                 <td>
-                    @Html.DisplayFor(modelItem => item.NoOfRes)
+                    @Html.DisplayFor(modelItem => item.Date)
                 </td>
                 <td>
-                    @Html.DisplayFor(modelItem => item.Date)
+                    @Html.DisplayFor(modelItem => item.NoOfRes)
                 </td>
                 <td>
                     @Html.DisplayFor(modelItem => item.Payment)
                 </td>
-                <td>
+@*                <td>
                     @Html.ActionLink("Edit", "Edit", new { /* id=item.PrimaryKey */ }) |
                     @Html.ActionLink("Details", "Details", new { /* id=item.PrimaryKey */ }) |
                     @Html.ActionLink("Delete", "Delete", new { /* id=item.PrimaryKey */ })
-                </td>
+                </td>*@
             </tr>
         }
     </tbody>
 </table>
 
 <h2>Upcoming Seven Days</h2>
-<p>Total Number of Reservations: @Model.TotalUpcomingNoOfRes</p>
-<p>Total Payment: @Model.TotalUpcomingPayment</p>
+<h6>Total number of incoming reservations for the next 7 days: @Model.TotalUpcomingNoOfRes</h6>
+@*<p>Total Payment: @Model.TotalUpcomingPayment</p>*@
 <table class="table">
-    <thead>
+    <thead class="thead-dark">
         <tr>
             <th>
-                @Html.DisplayNameFor(model => model.UpcomingReservations.First().NoOfRes)
+                @Html.DisplayNameFor(model => model.UpcomingReservations.First().Date)
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.UpcomingReservations.First().Date)
+                @Html.DisplayNameFor(model => model.UpcomingReservations.First().NoOfRes)
             </th>
             <th>
                 @Html.DisplayNameFor(model => model.UpcomingReservations.First().Payment)
@@ -86,19 +89,19 @@
         {
             <tr>
                 <td>
-                    @Html.DisplayFor(modelItem => item.NoOfRes)
+                    @Html.DisplayFor(modelItem => item.Date)
                 </td>
                 <td>
-                    @Html.DisplayFor(modelItem => item.Date)
+                    @Html.DisplayFor(modelItem => item.NoOfRes)
                 </td>
                 <td>
                     @Html.DisplayFor(modelItem => item.Payment)
                 </td>
-                <td>
+@*                <td>
                     @Html.ActionLink("Edit", "Edit", new { /* id=item.PrimaryKey */ }) |
                     @Html.ActionLink("Details", "Details", new { /* id=item.PrimaryKey */ }) |
                     @Html.ActionLink("Delete", "Delete", new { /* id=item.PrimaryKey */ })
-                </td>
+                </td>*@
             </tr>
         }
     </tbody>
