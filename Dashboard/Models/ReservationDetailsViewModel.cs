@@ -15,6 +15,9 @@
 
             TotalUpcomingNoOfRes = upcomingReservations.Sum(r => r.NoOfRes);
             TotalUpcomingPayment = upcomingReservations.Sum(r => r.Payment);
+
+            TotalRevenuePastSevenDays = TotalPastPayment * 0.2m;
+
         }
 
         public DateTime Date { get; set; }
@@ -23,6 +26,8 @@
         public List<ReservationModel> PastReservations { get; set; }
         public int TotalUpcomingNoOfRes { get; set; }
         public decimal TotalUpcomingPayment { get; set; }
+        public decimal TotalRevenuePastSevenDays { get; set; }
+
         public List<ReservationModel> UpcomingReservations { get; set; }
     }
 
