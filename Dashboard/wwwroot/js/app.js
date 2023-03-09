@@ -1,5 +1,5 @@
 function TSButton() {
-    var name = "Fred";
+    var name = "World";
     document.getElementById("ts-example").innerHTML = greeter(user);
 }
 var Student = /** @class */ (function () {
@@ -14,5 +14,5 @@ var Student = /** @class */ (function () {
 function greeter(person) {
     return "Hello, " + person.firstName + " " + person.lastName;
 }
-var user = new Student("Fred", "M.", "Smith");
+var user = new Student("World", "!", "!");
 //# sourceMappingURL=app.js.map

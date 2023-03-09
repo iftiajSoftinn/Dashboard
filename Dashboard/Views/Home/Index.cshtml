@@ -3,7 +3,7 @@
 }
 
 
-
+<body ng-app="NgApp">
 <div class="text-center">
     <h1 class="display-4">Welcome</h1>
     <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
@@ -15,3 +15,15 @@
         Click Me
     </button>
 </div>
+
+    <div ng-controller="NgAppController">
+    <ul ng-repeat="name in names">
+        <li>{{name}}</li>
+    </ul>
+
+</div>
+
+
+
+</body>
+
