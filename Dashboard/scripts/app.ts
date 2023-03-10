@@ -1,5 +1,5 @@
 ﻿function TSButton() {
-    let name: string = "Fred";
+    let name: string = "World";
     document.getElementById("ts-example").innerHTML = greeter(user);
 }
 
@@ -19,5 +19,5 @@ function greeter(person: Person) {
     return "Hello, " + person.firstName + " " + person.lastName;
 }
 
-let user = new Student("Fred", "M.", "Smith");
+let user = new Student("World", "!", "!");
 

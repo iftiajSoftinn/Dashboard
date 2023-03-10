@@ -3,4 +3,30 @@
 }
 <h1>@ViewData["Title"]</h1>
 
-<p>Use this page to detail your site's privacy policy.</p>
+<head ng-app="myApp">
+    <title>My AngularJS App</title>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular.min.js"></script>
+    <script src="/api/ngdata"></script>
+    <script src="../Scripts/NgController.js"></script>
+</head>
+
+<div ng-controller="MyController">
+    <table>
+        <thead>
+            <tr>
+                <th>Date</th>
+                <th>No. of Reservations</th>
+                <th>Payment</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr ng-repeat="reservation in reservations">
+                <td>{{ reservation.Date }}</td>
+                <td>{{ reservation.NoOfRes }}</td>
+                <td>{{ reservation.Payment }}</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+
