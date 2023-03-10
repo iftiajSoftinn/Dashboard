@@ -1,4 +1,4 @@
-﻿namespace Dashboard.Models
+﻿/*namespace Dashboard.Models
 {
     public class ReservationSummaryViewModel
     {
@@ -16,3 +16,4 @@
         }
     }
 }
+*/
